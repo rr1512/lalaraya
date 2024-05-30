@@ -27,7 +27,7 @@ export function Footer({className, padding}: Props) {
       <Menus />
       <div className="items-center justify-between gap-30 text-center text-muted md:flex md:text-left">
         <Trans
-          message="Copyright © :year :name, All Rights Reserved"
+          message="Copyright (update) © :year :name, All Rights Reserved"
           values={{year, name: branding.site_name}}
         />
         <div>
