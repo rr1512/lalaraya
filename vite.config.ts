@@ -19,9 +19,9 @@ function basePath(): Plugin {
 
 export default defineConfig({
   server: {
-    host: '0.0.0.0',
+    host: 'nveeta.cloud',
     hmr: {
-      host: '0.0.0.0',
+      host: '159.89.195.4',
     },
   },
   base: '',
