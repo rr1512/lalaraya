@@ -43,7 +43,7 @@ export function getProjectPreviewUrl(
   project: Project,
   options?: {removeProtocol?: boolean},
 ): string {
-  let url = `${getBootstrapData().settings.base_url}/sites/${
+  let url = `${getBootstrapData().settings.base_url}/${
     project.slug
   }`.replace(/\/$/, '');
   if (options?.removeProtocol) {
