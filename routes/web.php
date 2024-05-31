@@ -14,7 +14,7 @@ Route::get('register', [HomeController::class, 'render'])->name('register');
 Route::get('forgot-password', [HomeController::class, 'render']);
 Route::get('pricing', '\Common\Billing\PricingPageController');
 
-Route::get('sites/{name}/{page?}', [UserSiteController::class, 'show'])->name('user-site-regular');
+Route::get('{name}/{page?}', [UserSiteController::class, 'show'])->name('user-site-regular');
 Route::get('templates/preview/{name}/{page?}', TemplatePreviewController::class);
 
 //CATCH ALL ROUTES AND REDIRECT TO HOME
