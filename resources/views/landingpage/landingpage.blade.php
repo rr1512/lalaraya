@@ -12,9 +12,10 @@
       href="assets/images/favicon.png"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="assets/css/animate.css" />
-    <link rel="stylesheet" href="assets/css/tailwind.css" />
+
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/css/animate.css" />
+    <link rel="stylesheet" href="./assets/css/tailwind.css" />
 
     <!-- ==== WOW JS ==== -->
     <script src="assets/js/wow.min.js"></script>

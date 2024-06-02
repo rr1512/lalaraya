@@ -6,7 +6,11 @@ use App\Http\Controllers\UserSiteController;
 use Common\Core\Controllers\HomeController;
 use Common\Pages\CustomPageController;
 
-Route::get('/', LandingPageController::class);
+
+// Route::get('/', LandingPageController::class);
+Route::get('/', function(){
+    return view('/landingpage/landingpage');
+});
 Route::get('contact', [HomeController::class, 'render']);
 Route::get('pages/{slugOrId}', [CustomPageController::class, 'show']);
 Route::get('login', [HomeController::class, 'render'])->name('login');

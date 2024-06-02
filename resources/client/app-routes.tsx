@@ -18,9 +18,6 @@ import {EmailVerificationPage} from '@common/auth/ui/email-verification-page/ema
 import {Route, Routes} from 'react-router-dom';
 import {LandingPage} from '@app/landing/landing-page';
 import {GuestRoute} from '@common/auth/guards/guest-route';
-import ExternalSitePage from '@common/auth/ui/homee-page';
-
-
 
 const DashboardRoutes = React.lazy(
   () => import('./dashboard/dashboard-routes'),
@@ -55,10 +52,16 @@ export function AppRoutes() {
       <Routes>
         <Route
           path="/"
-          element={<ExternalSitePage />}
+          element={
+            <DynamicHomepage
+              homepageResolver={() => (
+                <GuestRoute>
+                  <LandingPage />
+                </GuestRoute>
+              )}
             />
-          
-        
+          }
+        />
         <Route
           path="/admin/*"
           element={
