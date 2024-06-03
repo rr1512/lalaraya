@@ -47,7 +47,7 @@
               <a class="navbar-brand" href="index.html">
                 <img src="builder/landingpage/assets/images/logo/logo.svg" alt="Logo" />
               </a>
-              <button class="navbar-toggler">
+              <button id="navbar-togler" class="navbar-toggler">
                 <span class="toggler-icon"> </span>
                 <span class="toggler-icon"> </span>
                 <span class="toggler-icon"> </span>

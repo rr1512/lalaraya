@@ -33,7 +33,7 @@
   };
 
   //===== close navbar-collapse when a  clicked
-  let navbarToggler = document.querySelector(".navbar-toggler");
+  let navbarToggler = document.querySelector("#navbar-toggler");
   const navbarCollapse = document.querySelector(".navbar-collapse");
 
   document.querySelectorAll(".ud-menu-scroll").forEach((e) =>
